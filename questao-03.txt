@@ -1,0 +1,7 @@
+function encontrarNumerosSolitarios(arr) {
+  return arr.filter((num, index) => arr.indexOf(num) === arr.lastIndexOf(num));
+}
+
+const numeros = [12, 17, 15, 19, 22, 17, 19, 12];
+const numerosSolitarios = encontrarNumerosSolitarios(numeros);
+console.log(numerosSolitarios); // Saída: [15, 22]

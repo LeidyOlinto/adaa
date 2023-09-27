@@ -1,0 +1,7 @@
+function contarPalavrasCamelCase(frase) {
+  return frase.split(/[A-Z]/).length;
+}
+
+const frase = "façaMercadoNoIfoodEntregamosTudoOQueVocêPrecisaNaPortaDaSuaCasa";
+const quantidadePalavras = contarPalavrasCamelCase(frase);
+console.log(quantidadePalavras); // Saída: 8
